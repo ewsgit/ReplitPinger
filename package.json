@@ -1,0 +1,16 @@
+{
+  "name": "replitpinger",
+  "version": "1.0.0",
+  "description": "PING, get replit always online for free :)",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ewsgit",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  }
+}
