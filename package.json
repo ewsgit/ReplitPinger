@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "PING, get replit always online for free :)",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ."
   },
   "keywords": [],
   "author": "ewsgit",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "node-fetch": "^3.0.0"
   }
 }

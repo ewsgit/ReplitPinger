@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Replit Pinger!</title>
+  </head>
+  <body>
+    <h1>Replit Pinger!</h1>
+    <h2>Enter a url into the box and press "Ping!" to start pinging that url to keep it alive!</h2>
+    <input placeholder="Enter Url Here." type="text" id="pingurl" />
+    <button id="ping">Ping!</button>
+    <script>
+      document.getElementById("ping").addEventListener("click", () => {
+        if (document.getElementById("pingurl").value !== "") {
+          fetch(`/add?url=${document.getElementById("pingurl").value}`)
+            .then(res => res.text())
+            .then(res => {
+              if (res === "Success") {
+								alert("Will Now Ping " + document.getElementById("pingurl").value);
+                document.getElementById("pingurl").value = "";
+                document.getElementById("pingurl").focus();
+              } else {
+								alert("Error: " + res);
+							}
+            });
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,6 +1,5 @@
 [
-	{
-		"name":"TestServer",
-		"url":"https://skyblock-money-dev.ewsgit.repl.co"
-	}
+  {
+    "url": "http://skyblock-money.ml"
+  }
 ]
